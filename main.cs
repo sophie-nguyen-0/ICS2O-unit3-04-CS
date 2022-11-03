@@ -1,7 +1,7 @@
 // Created by:sophie
 // Created on: oct 2020
 //
-//this program displays, "hello world"
+//this program calculates fahrenheit to celcius
 
 using System;
 
@@ -9,25 +9,19 @@ class Program
 {
     public static void Main(string[] args)
     {
-       int length;
-        int width;
-        int area;
-        int perimeter;
+       int fahrenheit;
+       double celcius;
 
-        Console.WriteLine("calculates the area and perimeter of a rectangle.");
+        Console.WriteLine("calculates the fahrenheit to celcius");
         Console.WriteLine("");
 
-        Console.Write("Enter length (cm): ");
-        length = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Enter width (cm): ");
-        width = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter fahrenheit (cm): ");
+        fahrenheit = Convert.ToInt32(Console.ReadLine());
 
-        area = length * width;
-        perimeter = 2 * (length + width);
-
+        celcius = (fahrenheit - 32) * 5.00 / 9.00;
+          
         Console.WriteLine("");
-        Console.WriteLine("The area is: " + area + " cm². ");
-        Console.WriteLine("perimeter is: " + perimeter + " cm. ");
+        Console.WriteLine("in celcius is: " + celcius + " °C. ");
 
         Console.WriteLine("\nDone.");
     }
