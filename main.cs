@@ -9,8 +9,8 @@ class Program
 {
     public static void Main(string[] args)
     {
-       int fahrenheit;
-       double celcius;
+        int fahrenheit;
+        double celcius;
 
         Console.WriteLine("calculates the fahrenheit to celcius");
         Console.WriteLine("");
@@ -19,7 +19,7 @@ class Program
         fahrenheit = Convert.ToInt32(Console.ReadLine());
 
         celcius = (fahrenheit - 32) * 5.00 / 9.00;
-          
+
         Console.WriteLine("");
         Console.WriteLine("in celcius is: " + celcius + " °C. ");
 
